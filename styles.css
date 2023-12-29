@@ -4,11 +4,7 @@ html, body{
     height: 100%;
     width: 100%;
     background: #100a1c;
-    background-image: radial-gradient(
-        50% 30% ellipse at center top,
-        #201e40 0%,
-        rgba(0, 0, 0, 0) 100%
-        ),
+    background-image: radial-gradient(50% 30% ellipse at center top,#201e40 0%,rgba(0, 0, 0, 0) 100%),
         radial-gradient(60% 50% ellipse at center bottom, #261226 0%, #100a1c 100%);
     background-attachment: fixed;
     color: #ffffff;
@@ -18,11 +14,17 @@ html, body{
     display: inline-block;
     width: 66px;
     padding: 10px 16px;
-    background-color: #000;
+    background-color: rgb(6, 8, 35);
     color: #fff;
     text-decoration: none;
     border: 2px solid white;
     border-radius: 10px;
     font-size: large;
     cursor: pointer;
+}
+
+.button:hover {
+    background-color:rgba(6, 8, 35,0.5);
+    box-shadow: 0 0 10px red;
+    transition-duration: 0.6s;
 }
